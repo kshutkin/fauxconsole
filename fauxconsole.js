@@ -1,7 +1,14 @@
-﻿/* Faux Console by Chris Heilmann http://wait-till-i.com */
+/* 
+ * Original Faux Console by Chris Heilmann http://wait-till-i.com 
+ * at http://icant.co.uk/sandbox/fauxconsole/
+ * 
+ * Forked by Konstantin Shutkin
+ * https://github.com/kshutkin/fauxconsole
+ * 
+ */
 define("console", [ "require" ], function(require) {
 
-	if (!!window.console) {
+	if (window.console) {
 		return window.console;
 	}
 

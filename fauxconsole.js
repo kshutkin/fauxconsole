@@ -15,11 +15,7 @@ define("console", [ "require" ], function(require) {
 	var tmpl = '<a href="javascript:console.hide()">close</a><a href="javascript:console.clear()">clear</a>';
 	var d = document.createElement('div');
 	d.innerHTML = tmpl;
-
-	var id = 'fauxconsole';
-	if (!document.getElementById(id)) {
-		d.id = id;
-	}
+	d.id = 'fauxconsole';
 
 	window.console = {
 		log : function(o) {

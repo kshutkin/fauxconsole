@@ -6,7 +6,7 @@
  * https://github.com/kshutkin/fauxconsole
  * 
  */
-define("console", [ "require" ], function(require) {
+define([ "require" ], function(require) {
 
 	if (window.console) {
 		return window.console;
